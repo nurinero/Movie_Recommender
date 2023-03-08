@@ -29,11 +29,11 @@ To run the Movie Recommender App, the following requirements are necessary:
 ## Usage
 To use the Movie Recommender App, follow these steps:
 
-1.Access the app on http://localhost:5000 on your web browser.
-2.Select your favorite movies from the list.
-3.Rate the selected movies.
-4.Click on the "Get Recommendations" button.
-5.The app will recommend from 1 to 100 top movies based on the NMF algorithm.
+1. Access the app on http://localhost:5000 on your web browser.
+2. Select your favorite movies from the list.
+3. Rate the selected movies.
+4. Click on the "Get Recommendations" button.
+5. The app will recommend from 1 to 100 top movies based on the NMF algorithm.
 
 ## License
 The Movie Recommender App is released under the MIT License. 
