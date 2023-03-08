@@ -8,7 +8,7 @@ The app implements the following recommender methods:
 * Non-Negative Matrix Factorization (NMF).
 * Collaborative Filtering.
 
-The app is built with Flask, and users can select their favorite movies. The user can rate the selected movies, and the app recommends 5 movies based on the NMF algorithm.
+The app is built with Flask, and users can select their favorite movies. The user can rate the selected movies, and the app recommends the top number of moviesyou set based on the NMF algorithm.
 
 ## Requirements
 To run the Movie Recommender App, the following requirements are necessary:
