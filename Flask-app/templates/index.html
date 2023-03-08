@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <title>Welcome in Covie Movie Club </title>
+</head>
+<body>
+    <img src="/static/Screenshot.png" width="200px" height="200px">
+    <h1>Welcome In {{name}}</h1>
+    <h3>Lets watching some movies tonight</h3>
+    <P>Select and rating three movies below</P>
+    
+    <!-- selact the matrix from the movies list -->
+    <form action = '/recommend'>
+        <select name="algo">
+        <option value="Random">Random</option>
+        <option value="NMF">NMF</option>
+        <option value="Cosine similarity">Cosine similarity</option>
+        </select>
+        <br> <br>
+        <!-- preper the user input and we can rcusted by request.args.getlist in python -->
+        {% for indx in range(3) %}
+        <input type="text" name="title" placeholder="Enter movie name" required list="movie_lst">
+        <input type="number" name="Ratings" placeholder="1-5" min="1" max="5" required>
+        <br><br>
+        {% endfor %}
+        <label >Number of the Top Movies: </label>
+        <input type="number" name="Top_Number" placeholder="MIN =1 " min="1" max="20" required>
+        <br><br>
+        <input type="submit" value="Show recommendation">
+    </form>
+
+ <!-- selact from the movies list -->
+    <datalist id="movie_lst">
+        {%for mov in movies%}
+        <option value="{{mov}}"></option>
+        {%endfor%}
+    </datalist>
+    <!-- <a href="/recommend">Show recommendation</a> -->
+</body>
+</html>

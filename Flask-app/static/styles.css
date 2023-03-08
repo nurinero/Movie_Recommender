@@ -1,0 +1,93 @@
+h1{
+    color: whitesmoke;
+    font-size: 50px;
+}
+h1:hover{
+    filter: grayscale();
+    filter:blur(2px);
+    filter: brightness(20%);}
+h3{
+    color: whitesmoke;
+    font-size: 35px;
+}
+li{
+    text-align: center;
+    color:whitesmoke;
+    font-style: italic;
+    font-size: 25px;
+    transition: all 3s;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: small;
+    font-family: fantasy;
+    background-image: url("backgruend.jpg");
+    background-size: cover;
+}
+
+button{
+    background-color:gray;
+    padding: 10px;
+}
+
+button{
+    color:whitesmoke;
+    font-style: italic;
+    font-size: 20px;
+    transition: all 3s;
+}
+
+button:hover{color: brown;}
+
+input[type=number]{width:50px}
+
+label{
+    color:whitesmoke;
+    font-style: italic;
+    font-size: 20px;
+    transition: all 3s;
+}
+
+
+ul{
+    display: inline-block;
+    text-align: center;
+    }
+
+.movies li{
+    padding: 50px;
+}
+
+.movies li:nth-child(odd){background-color: grey;
+}
+
+.movies li:nth-child(even){background-color: whitesmoke;
+}
+
+a{color: whitesmoke;
+    transition: all 3s;
+    font-size: 20px;
+    font-style: italic;}
+    
+a:hover{color: brown;}
+
+img{height: 20vh;
+    width: 100%;
+    margin: auto;
+    transition: all 2s;}
+
+img:hover{
+    filter: grayscale();
+    filter:blur(2px);
+    filter: brightness(20%);
+    /*transform: rotate(5deg) scale(1.2);*/
+}
+
+p,h2{color: whitesmoke;
+font-size: 20px;}
+    
+    
